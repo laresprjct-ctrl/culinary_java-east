@@ -1,0 +1,50 @@
+:root{
+  --bg1:#f7f9ff;
+  --accent1:#6a11cb;
+  --accent2:#2575fc;
+  --card:#ffffff;
+  --muted:#6b7280;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,"Helvetica Neue",Arial;color:#0f172a;background:var(--bg1)}
+
+.topbar{background: linear-gradient(135deg,#EAF2FF 0%, #E9E0FF 50%, #FFEAF0 100%);padding:28px 16px;text-align:center;border-bottom-left-radius:18px;border-bottom-right-radius:18px}
+.brand h1{margin:0;font-size:22px}
+.subtitle{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+.main{max-width:1100px;margin:18px auto;padding:12px}
+.card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 8px 28px rgba(12,18,33,0.06)}
+.controls{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}
+.controls .left{flex:1}
+.controls .right{display:flex;gap:10px;align-items:center}
+input,select,textarea{padding:10px;border-radius:10px;border:1px solid #e6e9ef;background:white;font-size:14px;color:#0f172a}
+#search-input{width:100%}
+.layout{display:grid;grid-template-columns:360px 1fr;gap:18px;align-items:start}
+
+.form-card h2{margin:0 0 8px 0}
+.form-card input, .form-card select, .form-card textarea{width:100%;margin-top:10px}
+.label{font-size:13px;margin-top:10px;color:var(--muted)}
+
+.stars{margin-top:8px}
+.stars span{font-size:26px;cursor:pointer;color:#d1d5db;margin-right:6px;transition:transform .12s, color .12s}
+.stars .active{color:#f6b93b;transform:scale(1.12)}
+
+.note{font-size:12px;color:var(--muted);margin-top:8px}
+.send-disabled{opacity:0.6;cursor:default}
+
+.list-header{display:flex;justify-content:space-between;align-items:center}
+.count{font-size:13px;color:var(--muted);margin-left:8px}
+.reviews{display:grid;gap:12px;margin-top:12px}
+.review-card{padding:12px;border-radius:10px;background:#fff;border:1px solid #f0f0f3}
+.review-card h3{margin:0;font-size:16px}
+.review-meta{font-size:13px;color:var(--muted);margin-top:6px}
+.empty{padding:12px;color:var(--muted);text-align:center;margin-top:12px}
+.footer{text-align:center;padding:18px 6px;color:var(--muted);font-size:13px}
+
+/* responsive */
+@media (max-width:920px){
+  .layout{grid-template-columns:1fr}
+  .controls{flex-direction:column;align-items:stretch}
+  .controls .right{justify-content:space-between;flex-wrap:wrap}
+}
