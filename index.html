@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Review Kuliner Jawa Timur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>🍜 Review Kuliner Jawa Timur</h1>
+      <p class="subtitle">Tulis & lihat ulasan restoran di semua kota/kabupaten Jatim — publik</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="controls card">
+      <div class="left">
+        <input id="search-input" placeholder="Cari nama tempat / makanan / reviewer..." />
+      </div>
+      <div class="right">
+        <select id="city-filter"><option value="">Semua Kota/Kabupaten</option></select>
+        <select id="rating-filter">
+          <option value="0">Semua Rating</option>
+          <option value="5">⭐ 5</option>
+          <option value="4">⭐ ≥4</option>
+          <option value="3">⭐ ≥3</option>
+          <option value="2">⭐ ≥2</option>
+          <option value="1">⭐ ≥1</option>
+        </select>
+        <select id="sort-by">
+          <option value="newest">Terbaru</option>
+          <option value="rating-desc">Rating (Tinggi → Rendah)</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="form-card card">
+        <h2>Tambah Ulasan</h2>
+        <input id="name" placeholder="Nama kamu" />
+        <input id="food" placeholder="Nama makanan (opsional)" />
+        <input id="place" placeholder="Nama tempat / restoran" />
+        <select id="city">
+          <option value="">Pilih Kota / Kabupaten</option>
+        </select>
+
+        <label class="label">Rating</label>
+        <div id="stars" class="stars" aria-label="Pilih rating">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+
+        <textarea id="comment" placeholder="Tulis ulasan..." rows="5"></textarea>
+        <button id="send-btn">Kirim Ulasan</button>
+        <p class="note">Ulasan akan terlihat publik. Jangan menulis data pribadi sensitif.</p>
+      </aside>
+
+      <section class="list-card card">
+        <div class="list-header">
+          <h2>Semua Ulasan <span id="count" class="count"></span></h2>
+        </div>
+        <div id="reviews-container" class="reviews"></div>
+        <div id="empty" class="empty">Belum ada ulasan.</div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Made with ♥ — Kuliner Jawa Timur</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
