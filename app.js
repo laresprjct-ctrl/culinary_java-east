@@ -3,7 +3,7 @@ const API_URL = "https://691fa33531e684d7bfca4fb0.mockapi.io/ReviewKuliner";
 
 // daftar kota/kabupaten Jawa Timur (dropdown)
 const JATIM_CITIES = [
-  "Surabaya","Malang","Batu","Blitar","Kediri","Madiun","Mojokerto","Pasuruan","Probolinggo",
+  "Surabaya","Sidoarjo","Kota Malang","Kabupaten Malang","Batu","Blitar","Kediri","Madiun","Mojokerto","Pasuruan","Probolinggo",
   "Sidoarjo","Gresik","Lamongan","Tuban","Bojonegoro","Jombang","Nganjuk","Ngawi","Magetan",
   "Ponorogo","Trenggalek","Tulungagung","Lumajang","Jember","Bondowoso","Situbondo","Banyuwangi",
   "Sampang","Pamekasan","Sumenep"
